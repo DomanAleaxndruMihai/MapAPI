@@ -1,2 +1,4 @@
 # Map.JS
-Map project for Bit Acad
+
+*API key not updated*
+Website cu api-ul de Google Maps 

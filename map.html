@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	
+	<head>
+		<title>MAPS</title>
+		<meta charset="utf-8">
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCatDMlFRBHhKL-A8YG2fXg8QVHBEvC8so"></script>
+		<link rel="stylesheet" type="text/css" href="main.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	</head>
+	
+	<body>
+		
+		<h1 id="title">In Bucuresti, in lume</h1>
+	
+		<div class="wrap">
+			<div class="search">
+			   <input type="text" id="findd" class="searchTerm" placeholder="Unde vrei sa mergi?">
+			</div>
+		 </div>
+		
+
+		<div id="map" style="width: 30%; height: 300px; position: relative; left: 35%; border: 1px solid black;"></div>
+
+		<div id="info"></div>
+
+		<button type="button" class="btn btn-info" id="buton" onClick="window.location.reload();">Mergi la locatia initiala</button>
+		<a href="#link1"><button type="button" id="back" class="btn btn-warning" value="Go back!" style="display: none;">Mergi la monumente</button></a>
+		<hr id="line">
+
+
+		<div id="options">
+
+			<a href="#" ><div class="card mb-3"  id="link1" >
+				<div class="row no-gutters" data-toggle="tooltip" data-placement="right" title="Tooltip on right">
+				  <div class="col-md-4">
+					<img src="Arcul_de_triumf.jpg" class="card-img" alt="...">
+				  </div>
+				  <div class="col-md-8">
+					<div class="card-body">
+					  <h5 class="card-title">Arcul de Triumf</h5>
+					  <p class="card-text">Arcul de Triumf este un monument istoric ce semnifica independenta si victoria Romaniei.</p>
+					
+					</div>
+				  </div>
+				</div data-nume="Arcul de triumf">
+			  </div>
+			</a>
+
+
+			<a href="#" class="link"><div id="link2" class="card mb-3">
+				<div class="row no-gutters">
+				  <div class="col-md-4">
+					<img src="1-casa-poporului0.jpg" class="card-img" alt="...">
+				  </div>
+				  <div class="col-md-8">
+					<div class="card-body">
+					  <h5 class="card-title">Casa Poporului</h5>
+					  <p class="card-text">Palatul Parlamentului este cea mai grea clădire din lume, care cântărește aproximativ 4.098.500.000 de kilograme.</p>
+					
+					</div>
+				  </div>
+				</div data-nume="Casa Poporului">
+			  </div>
+			</a>
+
+			<a href="#" class="link"><div id="link3" class="card mb-3">
+				<div class="row no-gutters">
+				  <div class="col-md-4">
+					<img src="anteneu.jpg" class="card-img" alt="...">
+				  </div>
+				  <div class="col-md-8">
+					<div class="card-body">
+					  <h5 class="card-title">Ateneul Roman</h5>
+					  <p class="card-text"> Ateneul Român este o sală de concerte din centrul Bucureștiului, România și un reper al capitalei românești.</p>
+					
+					</div>
+				  </div>
+				</div data-nume="Ateneul Roman">
+			  </div>
+			</a>
+
+			<a href="#" class="link"><div id="link4" class="card mb-3">
+				<div class="row no-gutters">
+				  <div class="col-md-4">
+					<img src="muzeut.jpg" class="card-img" alt="...">
+				  </div>
+				  <div class="col-md-8">
+					<div class="card-body">
+					  <h5 class="card-title">Muzeul Național al Satului „Dimitrie Gusti”</h5>
+					  <p class="card-text"> Muzeul Satului este un muzeu în aer liber, care prezintă viața tradițională a satului românesc.</p>
+					
+					</div>
+				  </div>
+				</div data-nume="Muzeul Național al Satului Dimitrie Gusti">
+			  </div>
+			</a>
+
+			<a href="#" class="link"><div id="link5" class="card mb-3">
+				<div class="row no-gutters">
+				  <div class="col-md-4">
+					<img src="antipa.jpg" class="card-img" alt="...">
+				  </div>
+				  <div class="col-md-8">
+					<div class="card-body">
+					  <h5 class="card-title">Muzeul Antipa</h5>
+					  <p class="card-text"> Muzeul Național de Istorie Naturală Grigore Antipa este un muzeu de istorie naturală, situat în București, România.</p>
+					
+					</div>
+				  </div>
+				</div data-nume="Muzeul Antipa">
+			  </div>
+			</a>
+
+			<a href="#" class="link"><div id="link6" class="card mb-3">
+				<div class="row no-gutters">
+				  <div class="col-md-4">
+					<img src="mistorie.jpg" class="card-img" alt="...">
+				  </div>
+				  <div class="col-md-8">
+					<div class="card-body">
+					  <h5 class="card-title">Muzeul Național de Istorie a României</h5>
+					  <p class="card-text"> Muzeul Național de Istorie a României este un muzeu care conține artefacte istorice românești.</p>
+					
+					</div>
+				  </div>
+				</div data-nume="Muzeul Național de Istorie a României">
+			  </div>
+			</a>
+
+			<a href="#" id="link" class="link"><div id="link7" class="card mb-3">
+				<div class="row no-gutters">
+				  <div class="col-md-4">
+					<img src="ARTA.jpg" class="card-img" alt="...">
+				  </div>
+				  <div class="col-md-8">
+					<div class="card-body">
+					  <h5 class="card-title">Muzeul Național de Artă al României</h5>
+					  <p class="card-text"> Muzeul Național de Artă al României este situat în Palatul Regal din Piața Revoluției.</p>
+					
+					</div>
+				  </div>
+				</div data-nume="Muzeul Național de Artă al României">
+			  </div>
+			</a>
+
+
+</ul>
+		</div>
+
+		<a href="#"><button type="button" id="totop" class="btn btn-secondary">Go to top!</button></a>
+
+		<script src="map.js"></script>
+		<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+		
+	</body>	
+	
+</html>

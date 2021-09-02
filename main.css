@@ -1,0 +1,88 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+html {
+  scroll-behavior: smooth;
+}
+
+#title{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+#findd{
+    text-align: center;
+}
+
+body{
+    background: #f2f2f2;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+.search {
+    width: 100%;
+    position: relative;
+    display: flex;
+    margin-bottom: 20px;
+  }
+  
+  .searchTerm {
+    width: 100%;
+    border: 3px solid #00B4CC;
+    padding: 5px;
+    height: 25px;
+    border-radius: 5px;
+    outline: none;
+    color: #9DBFAF;
+  }
+  
+  .searchTerm:focus{
+    color: #00B4CC;
+  }
+  
+  .wrap{
+    width: 30%;
+    position: relative;
+    left: 35%;
+  }
+
+#info{
+    text-align: center;
+}
+
+#buton{
+    width: 10%;
+    position: relative;
+    left: 45%;
+    margin-bottom: 30px;
+}
+
+#line{
+  width: 50%;
+  margin-right: 25%;
+  margin-bottom: 40px;
+}
+
+.card{
+  width: 30%;
+  position: relative;
+    left: 35%;
+}
+
+
+
+#back{
+
+  margin-left: 45%;
+  width: 10%;
+  
+}
+
+#totop{
+
+  width: 8%;
+  margin-left: 46%;
+  margin-bottom: 100px;
+
+}
+
